@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8BB514B4-23A8-4A43-A04D-20BDE18E722B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>innovidMultiscreenDisplayAppiPadClient</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7583F676-DE0C-4B99-8EF1-EC722A0352EC</key>
+		<string>https://github.com/jefftimesten/ofxJSON</string>
+		<key>C6CEE1C4-F1F5-4E71-AD18-23D681DC09CC</key>
+		<string>https://github.com/jdiedrick/innovidMultiscreenDisplayAppiPadClient.git</string>
+		<key>D3034AB9-9B16-4EC9-8D6F-D916453E1B7C</key>
+		<string>https://github.com/rezaali/ofxUI</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>innovidMultiscreenDisplayAppiPadClient.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7583F676-DE0C-4B99-8EF1-EC722A0352EC</key>
+		<string>../../../../../addons/ofxJSON</string>
+		<key>C6CEE1C4-F1F5-4E71-AD18-23D681DC09CC</key>
+		<string>../..</string>
+		<key>D3034AB9-9B16-4EC9-8D6F-D916453E1B7C</key>
+		<string>../../../../../addons/ofxUI</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jdiedrick/innovidMultiscreenDisplayAppiPadClient.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C6CEE1C4-F1F5-4E71-AD18-23D681DC09CC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C6CEE1C4-F1F5-4E71-AD18-23D681DC09CC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>innovidMultiscreenDisplayAppiPadClient</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7583F676-DE0C-4B99-8EF1-EC722A0352EC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxJSON</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D3034AB9-9B16-4EC9-8D6F-D916453E1B7C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxUI</string>
+		</dict>
+	</array>
+</dict>
+</plist>

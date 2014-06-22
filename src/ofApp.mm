@@ -68,7 +68,7 @@ void ofApp::update(){
 void ofApp::draw(){
     player.draw(0, 0, ofGetWidth(),ofGetHeight());
     if(debug){
-        // drawDebug();
+         drawDebug();
     }
     
     if(drawLoading) {
@@ -231,7 +231,9 @@ void ofApp::updateDDL(){
     //ddl->addToggle("iphone.mov");
     //update our dropdown box with the videos
     for (int i=0; i<response["videos"].size(); i++){
+        if (response["videos"][i]["tag"].asString() == "iPad") {
         ddl->addToggle(response["videos"][i]["filename"].asString());
+        }
     }
 }
 
@@ -342,35 +344,22 @@ void ofApp::downloadVideos(){
     
     for (int i=0; i<response["videos"].size(); i++){
         
-        ofFile video;
-        string video_url = response["videos"][i]["link"].asString();
-        string video_filename = response["videos"][i]["filename"].asString();
-        string video_final_path = ofxiPhoneGetDocumentsDirectory() + video_filename;
+        if (response["videos"][i]["tag"].asString() == "iPad") {
         
-        /*
-         indicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
-         indicator.frame = CGRectMake(0.0, 0.0, 40.0, 40.0);
-         CGPoint p;
-         p = ofxiPhoneGetGLView().center;
-         indicator.center = p;
-         [ofxiPhoneGetGLView() addSubview:indicator];
-         [indicator bringSubviewToFront:ofxiPhoneGetGLView()];
-         */
-        
-        if (!video.doesFileExist(video_final_path)) {
-            //[indicator startAnimating];
-            drawLoading = true;
-            numVideosToGet++;
-            fileloader.saveAsync(video_url, video_final_path);
-            cout << "downloading video number: " << i  << " url: " << video_url << " final path: " << video_final_path << " num vids to get " << numVideosToGet << endl;
-            cout << "draw loading? : " << drawLoading << endl;
+            ofFile video;
+            string video_url = response["videos"][i]["link"].asString();
+            string video_filename = response["videos"][i]["filename"].asString();
+            string video_final_path = ofxiPhoneGetDocumentsDirectory() + video_filename;
             
-            
-            
+            if (!video.doesFileExist(video_final_path)) {
+                drawLoading = true;
+                numVideosToGet++;
+                fileloader.saveAsync(video_url, video_final_path);
+                cout << "downloading video number: " << i  << " url: " << video_url << " final path: " << video_final_path << " num vids to get " << numVideosToGet << endl;
+                cout << "draw loading? : " << drawLoading << endl;
+            }
         }
-        
     }
-    
 }
 
 //---
